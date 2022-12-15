@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.App {
+  color: #293264;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('./public/blobs.png'), url('./public/blobs-2.png');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25%;
+  background-position: left 100% bottom 100%, right 100% top 100%;
+  background-color: #F5F7FB;
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 50px 5px 20px 10px rgba(69,69,69,0); 
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 50px 5px 20px 10px rgba(69,69,69,0);
+}
+

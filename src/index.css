@@ -1,0 +1,26 @@
+:root {
+  font-family: 'Karla', sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-image: linear-gradient(
+    45deg,
+    hsl(213deg 86% 60%) 0%,
+    hsl(223deg 80% 67%) 11%,
+    hsl(238deg 70% 71%) 22%,
+    hsl(255deg 63% 70%) 33%,
+    hsl(272deg 55% 67%) 44%,
+    hsl(288deg 48% 63%) 56%,
+    hsl(306deg 47% 62%) 67%,
+    hsl(318deg 57% 63%) 78%,
+    hsl(327deg 65% 64%) 89%,
+    hsl(335deg 71% 64%) 100%
+  );
+  background-repeat: no-repeat;
+  background-size:contain;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+

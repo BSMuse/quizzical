@@ -61,3 +61,22 @@
     right: 10%;
     /* display: none; */
   }
+
+  .correct-container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1em;
+  }
+
+  .play-again {
+    margin-top: 1.5em;
+    padding: 0.5em 0.5em;
+    border-radius: 7.94239px;
+    font-weight: 500;
+    font-size: 0.85em;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background-color: #4D5B9E;
+    color:#F5F7FB;
+  }

@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url('./images/blobs.png'), url('./images/blobs-2.png');
+  background-image: url('public/images/blobs.png'), url('public/images/blobs-2.png');
   background-repeat: no-repeat, no-repeat;
   background-size: 25%;
   background-position: left 100% bottom 100%, right 100% top 100%;

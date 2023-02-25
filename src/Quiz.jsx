@@ -5,12 +5,12 @@ import { nanoid } from 'https://cdn.jsdelivr.net/npm/nanoid/nanoid.js'
 export default function Quiz(props) {
     const [allQuestions, changeQuestions] = React.useState()
     const [quiz,quizDone] = React.useState(false) 
-    let ids = []
     const [score, changeScore] = React.useState(0)
     const [chosenIds, changeIds] = React.useState([])
     const styles = {display: props.styles}
     const { questions } = props
     const { displayQuiz } = props
+    let ids = []
 
     const handleClick = (event)=> {
         let questionIds = []
@@ -69,12 +69,13 @@ export default function Quiz(props) {
          })
         )
         },[displayQuiz])
-        
+
         const playAgain = () => {
             console.log('clicked')
-            quizDone(false)
-            redoQuiz(true)
-        }
+            window.location.reload(true)
+          }
+          
+        
         const correctAnswers = 
         <div className='correct-container'>
             <p>You scored {score}/4 correct answers</p>
@@ -89,7 +90,6 @@ export default function Quiz(props) {
             {!quiz && <button className='check-answers' onClick={checkAnswers} disabled={chosenIds.length < 4}>Check answers</button>}
             <div>
             {quiz && correctAnswers}
-            {/* {redo && <Quiz/>} */}
         </div>
     </div>
     )

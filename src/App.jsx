@@ -20,7 +20,6 @@ function App() {
     return array4;
   }
 
-
   React.useEffect(()=> {
     fetch(`https://opentdb.com/api.php?amount=4&difficulty=easy&type=multiple`)
     .then(res => res.json())
@@ -30,7 +29,7 @@ function App() {
         return {...question, answer: addArrays(question.correct_answer,question.incorrect_answers)}
       }))
     })
-  }, [])
+  }, [displayStart])
 
 const handleClickToStart = ()=> {
   changeStart(false)
@@ -44,8 +43,9 @@ const handleClickToStart = ()=> {
       styles={!displayStart ? "none" : "block" }
       />
        <Quiz
-       displayQuiz = {displayQuiz}
-       questions={questions}
+      key = ""
+      displayQuiz = {displayQuiz}
+      questions={questions}
       styles={displayQuiz ? "block" : "none" }
        /> 
     </div>

@@ -83,7 +83,7 @@ export default function Quiz(props) {
         </div>
     
     return (
-    <div className='quiz' style={styles}>
+    <div className='quiz_container' style={styles}>
         <div className='quiz-start'>
             {allQuestions}
         </div>
